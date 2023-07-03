@@ -1,0 +1,363 @@
+body {
+    background: url('images/fondo_pagina.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.custom-navbar {
+    display: flex;
+    border-radius: 10px; 
+    margin-left: auto;
+    margin-right: auto;  
+    width: 100%;
+    z-index: 99999;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+
+
+.navbar-scroll {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    transition: margin-top 0.5s; /* Agregamos una transición suave */
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+  
+.dropdown-item {
+    color: #000;
+}
+
+.navbar-responsive{
+  position: fixed;
+  display:none;
+}
+
+@media (max-width:480px){
+  
+  .navbar-responsive{
+    position: fixed;
+    display: flex;
+    width: 90%;
+  }
+
+  .custom-navbar{
+    display: none;
+  }
+
+  .botones-ph{
+    display: none;
+    width: 200%;
+    height: 2000px;
+  }
+
+  .gorros{
+    display: none;
+  }
+
+  .main-image{
+    display: center;
+    padding-right: 140px;
+  }
+  .carousel {
+    display: center;
+    padding-left: 200px;
+  }
+  .carousel-control-prev{
+    display: none;
+  }
+  .carousel-control-next{
+    display: none;
+  }
+  .border-5{
+    display: none;
+  }
+  .border{
+    display: none;
+  }
+  .eps{
+    margin-left:160px;
+    width: 150%;
+  }
+  .botones-episodios{
+    margin-left: 275px;
+    width:180%;
+  }  
+}
+
+#carousel {
+    width: 800px; 
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.botones-ph{
+	margin-top: 5%;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-clip: content-box;
+	width: 80%;
+	height: 250px;
+	border-radius: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.eps {
+  background-image: url(images/butersshow.jpg);
+  border-radius: 15px;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);;
+  color: #000000;
+  padding: 20px;
+}
+
+.eps h3 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.botones-episodios{
+	margin-top: 5%;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-clip: content-box;
+	width: 50%;
+	height: 250px;
+	border-radius: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.botones-episodios div {
+  flex: 1;
+  width: 20%;
+  padding: 2%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.botones-episodios div h4 {
+  font-size: 1.2rem;
+}
+
+.botones-episodios div a {
+  color: black;
+}
+
+.botones-episodios div a img{
+	width: 35%;
+	margin-bottom: 1.2rem;
+  margin: auto;
+  cursor: pointer;
+  transition: 4s;
+}
+
+.botones-episodios div a img:hover{
+  transform: scale(1.1);
+  transition: 4s;
+}
+
+.botones-episodios div:nth-child(2) img {
+	width: 45%;
+}
+
+.gorros{
+  display: none;
+	text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botones-ph div{
+  flex: 1;
+	width: 20%;
+	padding: 2%;
+  display: flex;
+	text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.botones-ph div h4 {
+	font-size: 1.2rem; 
+}
+
+.botones-ph div a {
+    color: black; 
+}
+  
+.botones-ph div a img{
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
+.botones-ph div:nth-child(1) img {
+	width: 75%;
+}
+
+.eric {
+    position: relative;
+    display: inline-block;
+}
+  
+.img-hover-eric {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.eric:hover .img-hover-eric {
+    opacity: 1;
+}
+
+.stan {
+  position: relative;
+  display: inline-block;
+}
+
+.img-hover-stan {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: scale(1.2);
+}
+
+.stan:hover .img-hover-stan {
+  opacity: 1;
+}
+
+.kenny {
+  position: relative;
+  display: inline-block;
+}
+
+.img-hover-kenny {
+  position: absolute;
+  top: 10px;
+  left: 68px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: scale(1.1);
+}
+
+.kenny:hover .img-hover-kenny {
+  opacity: 1;
+}
+
+.kyle {
+  position: relative;
+  display: inline-block;
+}
+
+.img-hover-kyle {
+  position: absolute;
+  top: 10px;
+  left: 68px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: scale(1.1);
+}
+
+.kyle:hover .img-hover-kyle {
+  opacity: 1;
+}
+
+@media (max-width:1400px){
+  .nav{
+    display: none;
+  }
+
+  .gorros{
+    display: flex;
+  }
+}
+
+@media (max-width:768px){
+  .nav{
+    display:none;
+  }
+  .abrirMenu{
+    display: none;
+  }
+  .botones-ph{
+    display: center;
+    margin-left: 200px;;
+  }
+  .custom-navbar{
+    display: center;
+    padding-left: 500px;
+    transform: scale(1,1.1);
+  }
+  .gorros{
+    display: none;
+    padding-left: 300px;
+  }
+  .main-image{
+    display: center;
+    padding-right: 140px;
+  }
+  .carousel {
+    display: center;
+    padding-left: 200px;
+  }
+  .carousel-control-prev{
+    display: none;
+  }
+  .carousel-control-next{
+    display: none;
+  }
+  .border-5{
+    display: none;
+  }
+  .border{
+    display: none;
+  }
+  .eps{
+    margin-left:200px;
+  }
+  .botones-episodios{
+    margin-left: 300px;
+  }
+
+}
+
+
+
+
+

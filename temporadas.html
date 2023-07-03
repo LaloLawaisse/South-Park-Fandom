@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Lisandro Lawaisse">
+    <meta name="description" content="South Park Fandom">
+    <meta name="keywords" content="South Park, Kyle, Kenny, Eric, Cartman, Stann">
+    <meta name="viewport" content="widht=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>South Park Fandom</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="stilo-temp.css"> <!-- Linkear ruta CSS-->
+    <!-- Javascript -->
+    <script src="functions.js"></script>
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="images/icono_ventana.png">
+     <!-- Animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+     <!-- Fonts -->
+     <style>
+       @font-face {
+           font-family: 'fuenteSouthPark';
+           src: url('fonts/south_park-webfont.woff') format('truetype'); 
+       }
+ 
+       body {
+           font-family: 'fuenteSouthPark', sans-serif;
+       }
+   </style>
+  </head>
+  <body class="fond">
+    <div class="has-bg-img">
+    <!-- Imagen header -->
+    <div class="gorros">
+        <img src="images/gorros_south_park.png" class="img-fluid" alt="gorros">
+    </div>
+    <!-- Imagen header -->
+    <!-- Navigation Bar -->
+    <div class="mx-auto custom-navbar">
+      <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes.html">PRINCIPALES</a></li>
+                  <li><a class="dropdown-item" href="personajes.html#secundarios">SECUNDARIOS</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EPISODIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="temporadas.html">TEMPORADAS</a></li>
+                  <li><a class="dropdown-item" href="temporadas.html#temp-actual">TEMPORADA ACTUAL</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="temporadas.html">TODOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html" role="button" aria-expanded="false">
+                  GALERIA
+                </a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
+                  CONTACTO
+                </a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar Responsive -->
+    <nav class="navbar bg-body-tertiary fixed-top navbar-responsive">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SOUTH PARK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SOUTH PARK</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes.html">PERSONAJES PRIMARIOS</a></li>
+                  <li><a class="dropdown-item" href="personajes.html#secundarios">PERSONAJES SECUNDARIOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EPISODIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="temporadas.html"></a>TEMPORADAS</li>
+                  <li><a class="dropdown-item" href="temporadas.html#temp-actual">TEMPORADAS ACTUAL</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="temporadas.html">TODOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar Responsive -->
+    
+    <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 0</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. El Espíritu de la Navidad: Jesús vs Frosty</li>
+            <li class="list-group-item">2. El Espíritu de la Navidad: Jesús vs Santa</li>
+            <li class="list-group-item">3 .El Piloto No Salido al Aire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_00.webp" class="img-fluid" alt="Temporada 0">
+      </div>
+    </div>
+  </div>
+
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 1</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Cartman Consigue Una Sonda Anal  </li>
+            <li class="list-group-item">2. Aumento De Peso 4000  </li>
+            <li class="list-group-item">3. Volcán  </li>
+            <li class="list-group-item">4. El Gran Crucero Del Gran Gay Al  </li>
+            <li class="list-group-item">5. Un Elefante Hace El Amor Con Una Cerda  </li>
+            <li class="list-group-item">6. Muerte  </li>
+            <li class="list-group-item">7. Conjuntivitis  </li>
+            <li class="list-group-item">8. Paco El Flaco  </li>
+            <li class="list-group-item">9. El Señor Mojón, La Mierda Navideña  </li>
+            <li class="list-group-item">10. Damien  </li>
+            <li class="list-group-item">11. Cirugía Plástica De Tom  </li>
+            <li class="list-group-item">12. Mecha-Streisand  </li>
+            <li class="list-group-item">13. La Mama De Cartman Es Una Puta Sucia  </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_1.webp" class="img-fluid" alt="Temporada 1">
+      </div>
+    </div>
+  </div>
+  
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 2</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Terrance y Philip: No Sin Mi Ano  </li>
+            <li class="list-group-item">2. La Mama De Cartman Sigue Siendo Una Puta Sucia </li>
+            <li class="list-group-item">3. El Gallinófilo </li>
+            <li class="list-group-item">4. El Pipi De Ike </li>
+            <li class="list-group-item">5. La Señora Unida A Un Feto </li>
+            <li class="list-group-item">6. La Rana Mexicana De Mirada Fija Del Sur De Sri Lanka </li>
+            <li class="list-group-item">7. La Ciudad En El Borde De Para Siempre </li>
+            <li class="list-group-item">8. Verano De Mierda </li>
+            <li class="list-group-item">9. Las Bolas De Chocolate Saladas De Chef </li>
+            <li class="list-group-item">10. Varicela </li>
+            <li class="list-group-item">11. Rogert Elbert Deberia Dejar La Comida Chatarra </li>
+            <li class="list-group-item">12. Casa Club </li>
+            <li class="list-group-item">13. El Día De las Vacas </li>
+            <li class="list-group-item">14. Ayuden A Chef </li>
+            <li class="list-group-item">15. El Pez Espeluznante </li>
+            <li class="list-group-item">16. ¡Feliz Navidad Charlie Manson! </li>
+            <li class="list-group-item">17. Gnomos </li>
+            <li class="list-group-item">18. El Hombre Prehistorico De Hielo </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_2.webp" class="img-fluid" alt="Temporada 2">
+      </div>
+    </div>
+  </div>
+  
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 3</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Mariposeando Con Los Niños </li>
+            <li class="list-group-item">2. Combustión Espontánea </li>
+            <li class="list-group-item">3. El Súcubo </li>
+            <li class="list-group-item">4. Tweek Vs Craig </li>
+            <li class="list-group-item">5. Jakovasaurios </li>
+            <li class="list-group-item">6. El Panda Del Acoso Sexual </li>
+            <li class="list-group-item">7. Orgía De Gatos </li>
+            <li class="list-group-item">8. Dos Hombres Desnudos En Un Jacuzzi </li>
+            <li class="list-group-item">9. Jubileo </li>
+            <li class="list-group-item">10. Chinpokomon </li>
+            <li class="list-group-item">11. Paco El Flaco En El Espacio </li>
+            <li class="list-group-item">12. El Misterio De Los Fantasmas Piratas De Korn </li>
+            <li class="list-group-item">13. Conectado Al Mono De Fonética </li>
+            <li class="list-group-item">14. La Medalla Roja de los Gays </li>
+            <li class="list-group-item">15. Clásicos De Navidad Del Sr. Mojón </li>
+            <li class="list-group-item">16. ¿Estás Ahí Dios? Soy Yo, Jesús </li>
+            <li class="list-group-item">17. Concierto Mundial De Flauta Dulce </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_3.webp" class="img-fluid" alt="Temporada 3">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite el mismo bloque de código para las temporadas 4 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 4 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 4</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. El Hada De Los Dientes 2000 </li>
+            <li class="list-group-item">2. El Tonto Crimen De Odio Contra Cartman 2000 </li>
+            <li class="list-group-item">3. Timmy 2000 </li>
+            <li class="list-group-item">4. Las Quintuples 2000 </li>
+            <li class="list-group-item">5. Cartman Se Une A NAMBLA </li>
+            <li class="list-group-item">6. Chef Se Vuelve Loco </li>
+            <li class="list-group-item">7. Tampones De Cabello Cherokee</li>
+            <li class="list-group-item">8. Algo Que Puedes Hacer Con Tu Dedo </li>
+            <li class="list-group-item">9. ¿Van Los Invalidos Al Infierno? </li>
+            <li class="list-group-item">10. Probablemente </li>
+            <li class="list-group-item">11. Cuarto Grado </li>
+            <li class="list-group-item">12. El Cuaderno Atrapador </li>
+            <li class="list-group-item">13. ¡Hellen Keller! El Musical </li>
+            <li class="list-group-item">14. Pip: Grandes Esperanzas </li>
+            <li class="list-group-item">15. Campamento De Gordos </li>
+            <li class="list-group-item">16. La Loca Aventura De Masturbacion </li>
+            <li class="list-group-item">17. Una Navidad De Mierda </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_4.webp" class="img-fluid" alt="Temporada 4">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 5 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 5 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 5</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Golpea al Aficionado </li>
+            <li class="list-group-item">2. Pelea De Inválidos </li>
+            <li class="list-group-item">3. Los Súper Mejores Amigos</li>
+            <li class="list-group-item">4. Scott Tenorman Debe Morir </li>
+            <li class="list-group-item">5. Terrance Y Philip: Detrás Del Pedo </li>
+            <li class="list-group-item">6. Cartmanlandia </li>
+            <li class="list-group-item">7. Uso Apropiado Del Condón </li>
+            <li class="list-group-item">8. Toallín </li>
+            <li class="list-group-item">9. Osama Bin Laden Tiene Los Pantalones Cagados </li>
+            <li class="list-group-item">10. Cómo Comer Con Tu Culo </li>
+            <li class="list-group-item">11. La Entidad </li>
+            <li class="list-group-item">12. Aquí Viene El Vecindario </li>
+            <li class="list-group-item">13. Kenny Muere </li>
+            <li class="list-group-item">14. El Show De Butters </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_5.webp" class="img-fluid" alt="Temporada 5">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 6 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 6 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 6</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Jared Tiene Sida</li>
+            <li class="list-group-item">2. Asspen, Culorado</li>
+            <li class="list-group-item">3. Huelga De Freaks</li>
+            <li class="list-group-item">4. Diversión Con Ternera</li>
+            <li class="list-group-item">5. El Avance De La Pelicula De Terrance Y Phillip</li>
+            <li class="list-group-item">6. El Profesor Caos</li>
+            <li class="list-group-item">7. Los Simpsons Ya Lo Han Hecho</li>
+            <li class="list-group-item">8. Amor Católico Candente</li>
+            <li class="list-group-item">9. Liberen A Sombrero</li>
+            <li class="list-group-item">10. Las Tetas De Bebe Destruyen La Sociedad</li>
+            <li class="list-group-item">11. El Secuestro Infantil No Tiene Gracia</li>
+            <li class="list-group-item">12. Una Escalera Al Cielo</li>
+            <li class="list-group-item">13. El Regreso Del Señor A Las Dos Torres</li>
+            <li class="list-group-item">14. El Campamento De La Tolerancia</li>
+            <li class="list-group-item">15. La Mierda Mas Grande Del Universo</li>
+            <li class="list-group-item">16. Mi Futuro Y Yo</li>
+            <li class="list-group-item">17. Abajo El Trineo Rojo</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_6.webp" class="img-fluid" alt="Temporada 6">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 7 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 7 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 7</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Cancelado</li>
+            <li class="list-group-item">2. Los Inválidos Locos</li>
+            <li class="list-group-item">3. Papel De Baño</li>
+            <li class="list-group-item">4. Soy Un Poco Rural</li>
+            <li class="list-group-item">5. Culo Gordo Y Cabeza De Panqueque</li>
+            <li class="list-group-item">6. Los Pequeños Detectives</li>
+            <li class="list-group-item">7. La Codicia Del Hombre De Piel Roja</li>
+            <li class="list-group-item">8. ¡South Park Es Gay!</li>
+            <li class="list-group-item">9. Hard Rock Cristiano</li>
+            <li class="list-group-item">10. Amanecer Gris</li>
+            <li class="list-group-item">11. Casa Bonita</li>
+            <li class="list-group-item">12. ¿Todo Sobre Los Mormones?</li>
+            <li class="list-group-item">13. Sin Colillas</li>
+            <li class="list-group-item">14. Pasitas</li>
+            <li class="list-group-item">15. Es Navidad En Canadá</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_7.webp" class="img-fluid" alt="Temporada 7">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 8 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 8 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 8</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Cancelado</li>
+            <li class="list-group-item">2. Los Inválidos Locos</li>
+            <li class="list-group-item">3. Papel De Baño</li>
+            <li class="list-group-item">4. Soy Un Poco Rural</li>
+            <li class="list-group-item">5. Culo Gordo Y Cabeza De Panqueque</li>
+            <li class="list-group-item">6. Los Pequeños Detectives</li>
+            <li class="list-group-item">7. La Codicia Del Hombre De Piel Roja</li>
+            <li class="list-group-item">8. ¡South Park Es Gay!</li>
+            <li class="list-group-item">9. Hard Rock Cristiano</li>
+            <li class="list-group-item">10. Amanecer Gris</li>
+            <li class="list-group-item">11. Casa Bonita</li>
+            <li class="list-group-item">12. ¿Todo Sobre Los Mormones?</li>
+            <li class="list-group-item">13. Sin Colillas</li>
+            <li class="list-group-item">14. Pasitas</li>
+            <li class="list-group-item">15. Es Navidad En Canadá</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_8.webp" class="img-fluid" alt="Temporada 8">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 9 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 9 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 9</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. La Nueva Vagina Del Señor Garrison</li>
+            <li class="list-group-item">2. Muere Hippie, Muere</li>
+            <li class="list-group-item">3. Wing</li>
+            <li class="list-group-item">4. Mejores Amigos Para Siempre</li>
+            <li class="list-group-item">5. La Aburrida Liga De Béisbol</li>
+            <li class="list-group-item">6. La Muerte De Eric Cartman</li>
+            <li class="list-group-item">7. Día De Erección</li>
+            <li class="list-group-item">8. Dos Días Antes De Pasado Mañana</li>
+            <li class="list-group-item">9. Margary</li>
+            <li class="list-group-item">10. ¡Sigue Ese Huevo!</li>
+            <li class="list-group-item">11. Niños Colorados</li>
+            <li class="list-group-item">12. Atrapados En El Closet</li>
+            <li class="list-group-item">13. Liberen a Willzyx</li>
+            <li class="list-group-item">14. Maria Sangrante</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_9.webp" class="img-fluid" alt="Temporada 9">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 10 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 10 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 10</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. El Regreso del Chef  </li>
+            <li class="list-group-item">2. ¡Alerta Smug! </li>
+            <li class="list-group-item">3. La Guerra de Los Dibujos Animados (Parte 1) </li>
+            <li class="list-group-item">4. La Guerra De Los Dibujos Animados (Parte 2) </li>
+            <li class="list-group-item">5. Toallín, Un Millón De Fibritas </li>
+            <li class="list-group-item">6. Hombre-Oso-Cerdo </li>
+            <li class="list-group-item">7. Tsst </li>
+            <li class="list-group-item">8. Haz El Amor, No El Warcraft </li>
+            <li class="list-group-item">9. El Misterio Del Mojón En El Urinal </li>
+            <li class="list-group-item">10. Una Maestra Tiene Sexo Con Un Niño </li>
+            <li class="list-group-item">11. Infierno En La Tierra 2006 </li>
+            <li class="list-group-item">12. Vamos Dios, Vamos </li>
+            <li class="list-group-item">13. Vamos Dios, Vamos (Parte 2) </li>
+            <li class="list-group-item">14. La Copa Stanley </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_10.webp" class="img-fluid" alt="Temporada 10">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 11 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 11 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 11</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Con Disculpas a Jesse Jackson</li>
+            <li class="list-group-item">2. Cartman Apesta</li>
+            <li class="list-group-item">3. Piojos</li>
+            <li class="list-group-item">4. El Snuke</li>
+            <li class="list-group-item">5. El Fantástico Especial de Pascuas</li>
+            <li class="list-group-item">6. ¡Les-Bos!</li>
+            <li class="list-group-item">7. La Noche de Los Desamparados Vivientes</li>
+            <li class="list-group-item">8. El Pequeño Tourette</li>
+            <li class="list-group-item">9. Más Mierda</li>
+            <li class="list-group-item">10. Imaginaciónlandia (Parte 1)</li>
+            <li class="list-group-item">11. Imaginaciónlandia (Parte 2)</li>
+            <li class="list-group-item">12. Imaginaciónlandia (Parte 3)</li>
+            <li class="list-group-item">13. Héroes de La Guitarra</li>
+            <li class="list-group-item">14. La Lista</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_11.webp" class="img-fluid" alt="Temporada 11">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 12 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 12 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 12</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Problema De Amígdalas</li>
+            <li class="list-group-item">2. El Nuevo Look De Britney Spears</li>
+            <li class="list-group-item">3. El Gran Tetaje</li>
+            <li class="list-group-item">4. Canadá En Huelga</li>
+            <li class="list-group-item">5. ¡Puaj, Un Pene!</li>
+            <li class="list-group-item">6. Sobre Cargado</li>
+            <li class="list-group-item">7. Súper Diversión</li>
+            <li class="list-group-item">8. El Problema Chino</li>
+            <li class="list-group-item">9. El Show Sobre El Cáncer De Seno</li>
+            <li class="list-group-item">10. Perudemia</li>
+            <li class="list-group-item">11. Perudemia 2: El Susto</li>
+            <li class="list-group-item">12. Sobre La Última Noche...</li>
+            <li class="list-group-item">13. Musical De Primaria</li>
+            <li class="list-group-item">14. El Incastigable</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_12.webp" class="img-fluid" alt="Temporada 12">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 13 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 13 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 13</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. El Anillo</li>
+            <li class="list-group-item">2. El Mapache</li>
+            <li class="list-group-item">3. Villa Margarita</li>
+            <li class="list-group-item">4. Come, Reza y Tírate Vagipedos</li>
+            <li class="list-group-item">5. Varitas de Pescado</li>
+            <li class="list-group-item">6. Carrera de Autos de Madera</li>
+            <li class="list-group-item">7. Barbagorda</li>
+            <li class="list-group-item">8. Celebridades Muertas</li>
+            <li class="list-group-item">9. La Perra Mayor De Butters</li>
+            <li class="list-group-item">10. FCL: El Club De Luchas</li>
+            <li class="list-group-item">11. ¡Jódete, Ballena!</li>
+            <li class="list-group-item">12. La Palabra con M</li>
+            <li class="list-group-item">13. Baila Con Los Pitufos</li>
+            <li class="list-group-item">14. Pis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_13.webp" class="img-fluid" alt="Temporada 13">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 14 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 14 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 14</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Curación Sexual</li>
+            <li class="list-group-item">2. La Historia de Escroto McBolas de Moco</li>
+            <li class="list-group-item">3. Pollo Frito Medicinal</li>
+            <li class="list-group-item">4. Tienes 0 Amigos En Facebook</li>
+            <li class="list-group-item">5. 200</li>
+            <li class="list-group-item">6. 201</li>
+            <li class="list-group-item">7. Verano Minusválido</li>
+            <li class="list-group-item">8. Pobre y Estúpido</li>
+            <li class="list-group-item">9. Es Cosa De Jersey</li>
+            <li class="list-group-item">10. El Origen</li>
+            <li class="list-group-item">11. El Mapache 2: Retrospectiva</li>
+            <li class="list-group-item">12. Mysterion Se Subleva</li>
+            <li class="list-group-item">13. El Mapache Vs El Mapache Y Sus Amigos</li>
+            <li class="list-group-item">14. Crema Freiche</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_14.webp" class="img-fluid" alt="Temporada 14">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 15 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 15 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 15</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. CentiPad Humano</li>
+            <li class="list-group-item">2. Chistobot</li>
+            <li class="list-group-item">3. Budín Real</li>
+            <li class="list-group-item">4. T.A.P</li>
+            <li class="list-group-item">5. Asociación Atlética de Bebés Crack</li>
+            <li class="list-group-item">6. City Sushi</li>
+            <li class="list-group-item">7. Estás Envejeciendo</li>
+            <li class="list-group-item">8. Ano Berger</li>
+            <li class="list-group-item">9. El Último de Los Mehicanos</li>
+            <li class="list-group-item">10. Lenguado (Indiscretos)</li>
+            <li class="list-group-item">11. Broadway Abajo</li>
+            <li class="list-group-item">12. 1%</li>
+            <li class="list-group-item">13. El Día de Acción de Gracias de History Channel</li>
+            <li class="list-group-item">14. El Niño Pobre</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_15.webp" class="img-fluid" alt="Temporada 15">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 16 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 16 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 16</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Mujeres Arriba</li>
+            <li class="list-group-item">2. Compramos Oro</li>
+            <li class="list-group-item">3. Faithileo</li>
+            <li class="list-group-item">4. Judacabra</li>
+            <li class="list-group-item">5. Bolas de Mantequilla</li>
+            <li class="list-group-item">6. Nunca Debí Haber Ido A Hacer Tirolesa</li>
+            <li class="list-group-item">7. Cartman Encuentra El Amor</li>
+            <li class="list-group-item">8. Sarcásmobol</li>
+            <li class="list-group-item">9. Subiendo Los Niveles</li>
+            <li class="list-group-item">10. Inseguridad</li>
+            <li class="list-group-item">11. Volviéndose Nativo</li>
+            <li class="list-group-item">12. Una Pesadilla En iPad</li>
+            <li class="list-group-item">13. Una Scausa Que Aplaudir</li>
+            <li class="list-group-item">14. ¡Obama Gana!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_16.webp" class="img-fluid" alt="Temporada 16">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 17 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 17 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 17</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Let Go, Let Gov</li>
+            <li class="list-group-item">2. Documental Homicidios Porno</li>
+            <li class="list-group-item">3. Guerra Mundial Zimmerman</li>
+            <li class="list-group-item">4. Niños Góticos 3: El Amanecer de los Falsos</li>
+            <li class="list-group-item">5. Rompiendo Chochas</li>
+            <li class="list-group-item">6. Vaca Pelirroja</li>
+            <li class="list-group-item">7. Viernes Negro</li>
+            <li class="list-group-item">8. Una Canción de Culo y Fuego</li>
+            <li class="list-group-item">9. Tetas y Dragones</li>
+            <li class="list-group-item">10. El Hobbit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_17.webp" class="img-fluid" alt="Temporada 17">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 18 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 18 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 18</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Jódete</li>
+            <li class="list-group-item">2. Ébola Libre de Gluten</li>
+            <li class="list-group-item">3. El Mariquita</li>
+            <li class="list-group-item">4. Handicar</li>
+            <li class="list-group-item">5. La Selva Mágica</li>
+            <li class="list-group-item">6. Freemium no es Gratis</li>
+            <li class="list-group-item">7. Vacasagrabucle Castigado</li>
+            <li class="list-group-item">8. Magia de Pollas</li>
+            <li class="list-group-item">9. #REFRITO</li>
+            <li class="list-group-item">10. #FelicesHologramas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_18.webp" class="img-fluid" alt="Temporada 18">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 19 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 19 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 19</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Imponente y Valiente</li>
+            <li class="list-group-item">2. ¿Dónde está mi País?</li>
+            <li class="list-group-item">3. El Pueblo Dentro de la Ciudad</li>
+            <li class="list-group-item">4. No Eres Yelp</li>
+            <li class="list-group-item">5. Espacio Seguro</li>
+            <li class="list-group-item">6. Tweek x Craig</li>
+            <li class="list-group-item">7. Ninjas Malcriados</li>
+            <li class="list-group-item">8. Contenido Patrocinado</li>
+            <li class="list-group-item">9. Verdad y Propaganda</li>
+            <li class="list-group-item">10. La Justicia Final del Director PC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_19.webp" class="img-fluid" alt="Temporada 19">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 20 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 20 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 20</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Bayas de Recuerdos</li>
+            <li class="list-group-item">2. Caza Putas</li>
+            <li class="list-group-item">3. Los Condenados</li>
+            <li class="list-group-item">4. Pitos Fuera</li>
+            <li class="list-group-item">5. Basura y un Danés</li>
+            <li class="list-group-item">6. Fort Collins</li>
+            <li class="list-group-item">7. Oh, Jesús</li>
+            <li class="list-group-item">8. Sólo Miembros</li>
+            <li class="list-group-item">9. No Es Gracioso</li>
+            <li class="list-group-item">10. El Fin De La Serialización Tal Como La Conocemos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_20.webp" class="img-fluid" alt="Temporada 20">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 21 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 21 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 21</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Gente Blanca Renovando Casas</li>
+            <li class="list-group-item">2. Bájalo</li>
+            <li class="list-group-item">3. Especial de Feriado</li>
+            <li class="list-group-item">4. Precuela de la Franquicia</li>
+            <li class="list-group-item">5. Hummels & Heroína</li>
+            <li class="list-group-item">6. Hijos de Brujas</li>
+            <li class="list-group-item">7. Doble Fracaso</li>
+            <li class="list-group-item">8. Tardígrados Danzarines</li>
+            <li class="list-group-item">9. Dirección SÚPER DURA</li>
+            <li class="list-group-item">10. Tomate Explosivo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_21.webp" class="img-fluid" alt="Temporada 21">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 22 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 22 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 22</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Niños Muertos</li>
+            <li class="list-group-item">2. Un Niño y Un Sacerdote</li>
+            <li class="list-group-item">3. El Problema con un Mojón</li>
+            <li class="list-group-item">4. Granjas Tegridad</li>
+            <li class="list-group-item">5. Los Monopatines</li>
+            <li class="list-group-item">6. Tiempo Para Tomarlo En Cereal</li>
+            <li class="list-group-item">7. ¿Nadie Lo Toma En Cereal?</li>
+            <li class="list-group-item">8. Caja de Buda</li>
+            <li class="list-group-item">9. Insatisfecho</li>
+            <li class="list-group-item">10. Desfile de Bicicletas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_22.webp" class="img-fluid" alt="Temporada 22">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repite este bloque de código para las temporadas 23 a 26 cambiando los números y la imagen correspondiente -->
+  
+  <!-- Temporada 23 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 23</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Guasón Mexicano</li>
+            <li class="list-group-item">2. Banda en China</li>
+            <li class="list-group-item">3. Vacunas</li>
+            <li class="list-group-item">4. Que Coman Mejunjes</li>
+            <li class="list-group-item">5. Especial de Halloween de Granjas Tegridad</li>
+            <li class="list-group-item">6. Temporada Final</li>
+            <li class="list-group-item">7. Jugadoras de Mesa</li>
+            <li class="list-group-item">8. Ladrones de Mojones</li>
+            <li class="list-group-item">9. El Show de Scott Malkinson</li>
+            <li class="list-group-item">10. Nieve Navideña</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_23.webp" class="img-fluid" alt="Temporada 23">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Temporada 24 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 24</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Especial de Pandemia </li>
+            <li class="list-group-item">2. Especial de Vacunación South ParQ </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_24.jpg" class="img-fluid" alt="Temporada 24">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Temporada 25 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center">Temporada 25</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Día de la Pijama</li>
+            <li class="list-group-item">2. La Gran Redención</li>
+            <li class="list-group-item">3. Gente de Ciudad</li>
+            <li class="list-group-item">4. Volver A La Guerra Fria</li>
+            <li class="list-group-item">5. ¡Ayuda! ¡Mi adolescente me odia!</li>
+            <li class="list-group-item">6. Credigree Weed Especial el Día de San Patricio</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_25.jpg" class="img-fluid" alt="Temporada 25">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Temporada 26 -->
+  <div class="temporadas">
+    <div class="row custom-row">
+      <div class="col-8">
+        <h2 class="text-center" id="temp-actual">Temporada 26</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">1. Cupido Ye</li>
+            <li class="list-group-item">2. Tour Mundial De Privacidad</li>
+            <li class="list-group-item">3. Baño Japonés</li>
+            <li class="list-group-item">4. Aprendizaje Profundo</li>
+            <li class="list-group-item">5. DikinBaus Perros Calientes</li>
+            <li class="list-group-item">6. Vacaciones de Primavera</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <img src="images/temporadas/Temporada_26.jpg" class="img-fluid" alt="Temporada 26">
+      </div>
+    </div>
+  </div>
+  
+    
+
+
+    
+    
+</body>

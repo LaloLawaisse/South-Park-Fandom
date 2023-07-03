@@ -1,0 +1,93 @@
+body {
+    background: url('images/fondo_pagina.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.custom-navbar {
+    border-radius: 10px; 
+    margin-left: auto;
+    margin-right: auto;  
+    width: 100%;
+    z-index: 99999;
+    margin-top: 0px;
+}
+
+.navbar-scroll {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    transition: margin-top 0.5s; 
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+  
+.dropdown-item {
+    color: #000;
+}
+
+
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gorros{
+    display: flex;
+      text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+.card {
+    margin-top: 20px;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    border: #fff;
+}
+
+.title {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-left: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.navbar-responsive{
+    position: fixed;
+    display:none;
+  }
+  
+  @media (max-width:480px){
+    
+    .navbar-responsive{
+      position: fixed;
+      display: flex;
+      width: 90%;
+    }
+    .custom-navbar{
+        display: none;
+      }
+      .gorros{
+        display:none;
+      }
+}
+

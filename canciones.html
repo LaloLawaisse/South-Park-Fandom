@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Lisandro Lawaisse">
+    <meta name="description" content="South Park Fandom">
+    <meta name="keywords" content="South Park, Kyle, Kenny, Eric, Cartman, Stann">
+    <meta name="viewport" content="widht=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>South Park Fandom</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="stilo-can.css"> <!-- Linkear ruta CSS-->
+    <!-- Javascript -->
+    <script src="functions.js"></script>
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="images/icono_ventana.png">
+     <!-- Animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+     <!-- Fonts -->
+     <style>
+       @font-face {
+           font-family: 'fuenteSouthPark';
+           src: url('fonts/south_park-webfont.woff') format('truetype'); 
+       }
+ 
+       body {
+           font-family: 'fuenteSouthPark', sans-serif;
+       }
+   </style>
+  </head>
+  <body class="fond">
+    <div class="has-bg-img">
+    <!-- Imagen header -->
+    <div class="gorros">
+        <img src="images/gorros_south_park.png" class="img-fluid" alt="gorros">
+    </div>
+    <!-- Imagen header -->
+    <!-- Navigation Bar -->
+    <div class="mx-auto custom-navbar">
+      <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes.html">PRINCIPALES</a></li>
+                  <li><a class="dropdown-item" href="personajes.html#secundarios">SECUNDARIOS</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EPISODIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="temporadas.html">TEMPORADAS</a></li>
+                  <li><a class="dropdown-item" href="temporadas.html#temp-actual">TEMPORADA ACTUAL</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="temporadas.html">TODOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html" role="button" aria-expanded="false">
+                  GALERIA
+                </a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
+                  CONTACTO
+                </a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar Responsive -->
+    <nav class="navbar bg-body-tertiary fixed-top navbar-responsive">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SOUTH PARK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SOUTH PARK</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="personajes.html">PERSONAJES PRIMARIOS</a></li>
+                  <li><a class="dropdown-item" href="personajes.html#secundarios">PERSONAJES SECUNDARIOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EPISODIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="temporadas.html"></a>TEMPORADAS</li>
+                  <li><a class="dropdown-item" href="temporadas.html#temp-actual">TEMPORADAS ACTUAL</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="temporadas.html">TODOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar Responsive -->
+
+    <div class="title"><h1>CANCIONES</h1></div>
+    <div class="videos">
+      <div class="vidio border border-5">
+      <h3>I'm gonna make love to you woman</h3>
+      <video width="640" height="480" autplay controls>
+        <source src="images/videos/ImGonnaMakeLoveToYouWoman.mp4" type="video/mp4">
+      </video>
+      </div>
+
+      <div class="vidio border border-5">
+        <h3>Butters theme song</h3>
+        <video width="640" height="480" autplay controls>
+          <source src="images/videos/butters theme song.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="vidio border border-5">
+        <h3>'Kyle's Mom' Live at South Park The 25th Anniversary Concert</h3>
+        <video width="640" height="480" autplay controls>
+          <source src="images/videos/'Kyle's Mom' Live at South Park The 25th Anniversary Concert.mp4" type="video/mp4">
+        </video>
+        </div>
+
+          <div class="vidio border border-5">
+            <h3>Cher performing 'Believe' at South Park</h3>
+            <video width="640" height="480" autplay controls>
+              <source src="images/videos/CherChef.mp4" type="video/mp4">
+            </video>
+            </div>
+
+
+            <div class="vidio border border-5">
+              <h3>Faith + 1</h3>
+              <video width="640" height="480" autplay controls>
+                <source src="images/videos/faith+1.mp4" type="video/mp4">
+              </video>
+              </div>
+
+              <div class="vidio border border-5">
+                <h3>Canada on strike</h3>
+                <video width="640" height="480" autplay controls>
+                  <source src="images/videos/South Park - Canada On Strike HD.mp4" type="video/mp4">
+                </video>
+                </div>
+
+                <div class="vidio border border-5">
+                  <h3>Casa bonita</h3>
+                  <video width="640" height="480" autplay controls>
+                    <source src="images/videos/South Park - Casa Bonita.mp4" type="video/mp4">
+                  </video>
+                  </div>
+
+                  <div class="vidio border border-5">
+                    <h3>California love</h3>
+                    <video width="640" height="480" autplay controls>
+                      <source src="images/videos/South Park- California Love Music Video with Lyrics.mp4" type="video/mp4">
+                    </video>
+                    </div>
+        
+      
+
+      
+    </div>
+
+</body>
