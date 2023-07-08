@@ -143,20 +143,12 @@ body {
 }
 
 .title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    margin-left: 35%;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 500px;
+  margin-right: 500px;
     
 }
 .arrow {
@@ -190,10 +182,17 @@ body {
 
 @media (max-width:480px){
   
+  .title{
+    margin-top: 70px;
+    justify-items: center;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
   .navbar-responsive{
     position: fixed;
     display: flex;
-    width: 90%;
+    width: 100%;
   }
   .custom-navbar{
     display: none;
@@ -204,4 +203,10 @@ body {
   .gorros{
     display:none;
   }
+}
+
+footer {
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px;
 }

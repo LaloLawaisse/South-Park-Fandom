@@ -66,6 +66,7 @@ body {
     font-family: 'Didact Gothic', sans-serif;
     justify-content: start;
     text-align: left;
+    margin-right: 10px;
 }
 
 .card-img-top{
@@ -102,27 +103,36 @@ body {
     margin-right: 380px;
 }
 
-@media (max-width:480px){
-    .pj-primarios{
-       display: inline;
-       text-align: center;
-        }
-    .pj-secundarios{
-        display: inline;
-    }
-}
-
 .navbar-responsive{
     position: fixed;
     display:none;
   }
   
-  @media (max-width:480px){
-    
+
+@media (max-width:480px){
+
+    .col{
+        padding-left: 90px;
+    }
+    .pj-primarios{
+        margin-top: 70px;
+        justify-items: center;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        }
+    .pj-secundarios{
+        margin-top: 70px;
+        justify-items: center;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
     .navbar-responsive{
       position: fixed;
       display: flex;
-      width: 90%;
+      width: 100%;
     }
     .custom-navbar{
         display: none;
@@ -131,3 +141,9 @@ body {
         display:none;
       }
 }
+
+footer {
+    justify-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }

@@ -39,12 +39,20 @@ body {
   display:none;
 }
 
+footer {
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width:480px){
-  
+  .gorros{
+    display: none;
+  }
   .navbar-responsive{
     position: fixed;
     display: flex;
-    width: 90%;
+    width: 42%;
   }
 
   .custom-navbar{
@@ -52,43 +60,21 @@ body {
   }
 
   .botones-ph{
-    display: none;
     width: 200%;
     height: 2000px;
   }
-
-  .gorros{
-    display: none;
-  }
-
   .main-image{
-    display: center;
-    padding-right: 140px;
+    width: 40%;
   }
-  .carousel {
-    display: center;
-    padding-left: 200px;
-  }
-  .carousel-control-prev{
+
+  #carousel {
     display: none;
-  }
-  .carousel-control-next{
-    display: none;
-  }
-  .border-5{
-    display: none;
-  }
-  .border{
-    display: none;
+    padding-right: 347px;
   }
   .eps{
-    margin-left:160px;
-    width: 150%;
+    display: none;
   }
-  .botones-episodios{
-    margin-left: 275px;
-    width:180%;
-  }  
+
 }
 
 #carousel {
@@ -187,7 +173,7 @@ body {
 }
 
 .gorros{
-  display: none;
+  display: flex;
 	text-align: center;
   justify-content: center;
   align-items: center;
@@ -298,64 +284,8 @@ body {
   opacity: 1;
 }
 
-@media (max-width:1400px){
-  .nav{
-    display: none;
-  }
 
-  .gorros{
-    display: flex;
-  }
-}
 
-@media (max-width:768px){
-  .nav{
-    display:none;
-  }
-  .abrirMenu{
-    display: none;
-  }
-  .botones-ph{
-    display: center;
-    margin-left: 200px;;
-  }
-  .custom-navbar{
-    display: center;
-    padding-left: 500px;
-    transform: scale(1,1.1);
-  }
-  .gorros{
-    display: none;
-    padding-left: 300px;
-  }
-  .main-image{
-    display: center;
-    padding-right: 140px;
-  }
-  .carousel {
-    display: center;
-    padding-left: 200px;
-  }
-  .carousel-control-prev{
-    display: none;
-  }
-  .carousel-control-next{
-    display: none;
-  }
-  .border-5{
-    display: none;
-  }
-  .border{
-    display: none;
-  }
-  .eps{
-    margin-left:200px;
-  }
-  .botones-episodios{
-    margin-left: 300px;
-  }
-
-}
 
 
 

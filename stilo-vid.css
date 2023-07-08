@@ -97,3 +97,9 @@ body {
       display:none;
     }
 }
+
+footer {
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px;
+}

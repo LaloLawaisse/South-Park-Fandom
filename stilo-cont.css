@@ -55,10 +55,13 @@ body {
   
   @media (max-width:480px){
     
+    .container{
+      margin-top: 70px;
+    }
     .navbar-responsive{
       position: fixed;
       display: flex;
-      width: 90%;
+      width: 100%;
     }
     .custom-navbar{
       display: none;
@@ -66,5 +69,11 @@ body {
     .gorros{
       display:none;
     }
+  }
+
+  footer {
+    justify-items: center;
+    text-align: center;
+    margin-top: 50px;
   }
 
